@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CFPB HTML Prototype</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="static/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="static/css/starter.css" rel="stylesheet" media="screen">
+<!--[if lt IE 9]>
+<script src="static/js/html5shim.js"></script>
+<![endif]-->
+
+</head>
+<body class="index-page" >
+    <div class="wrapper-content">
+        <div class="container-fluid">
+
+            <header>
+                <h1> <i class="icon-heart"></i> Know Your Kitties.gov </h1>
+            </header>
+
+            <ul class="unstyled kitten-list">
+
+                <script class="protoplate" type="text/html" data-csv="https://docs.google.com/spreadsheet/pub?key=0AogX989pyIxTdC1qOUNuaHh1LTJtWXV2T0xQWC1wMlE&output=csv">
+                        {{#each csv}}
+                            {{#isDivisibleBy 3 @index}}</div><div class="row-fluid">{{/isDivisibleBy}}
+                            <li class="kitten span4">
+                                <a href="kitten-details-templated.html?name={{name}}&index={{@index}}">
+                                   <div class="kitten-image-container">
+                                        <img src="{{picture}}" />
+                                   </div>
+                                </a>
+                                <a href="kitten-details-templated.html?name={{name}}&index={{@index}}">
+                                    <h3>{{name}}</h3>
+                                </a>
+                                <a href="kitten-details-templated.html?name={{name}}&index={{@index}}"> Find out more about this kitty </a>
+                            </li>
+                        {{/each}}
+                    </div>
+                </script>
+
+            </ul>
+                           
+        </div>
+    </div>
+<script src="static/js/jquery-1.9.1.js"></script>
+<script src="static/js/protoplate.min.js"></script>
+<script src="static/js/bootstrap.min.js"></script>
+<script src="static/js/starter.js"></script>
+</body>
+</html>

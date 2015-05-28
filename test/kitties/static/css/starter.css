@@ -1,0 +1,110 @@
+/* 
+ *
+ * Colors
+ *
+ * lighter gray   #E6E6E6
+ * light gray     #CCCCCC
+ * 
+ * Font Weights
+ *
+ * 100 = thin
+ * 200 = extra-light
+ * 300 = light
+ * 400 = normal, book
+ * 500 = medium
+ * 600 = demi-bold
+ * 700 = bold
+ * 800 = heavy
+ * 900 = black
+ *
+ */
+
+
+/* ==========================================================================
+   Prototype Styles
+   ========================================================================== */
+.wrapper-content {
+    max-width:960px;
+    margin: 80px auto;
+}
+
+h1 {
+    text-align: center;
+
+}
+
+h1 .icon-heart {
+    color: pink;
+}
+
+.nav {
+    width:50%;
+    margin: 40px auto 0 auto;
+    text-align: center;
+}
+
+.nav li {
+    display:inline-block;
+}
+
+.nav .active {
+    background-color: #ccc;
+} 
+
+.nav li a {
+    padding:10px;
+}
+
+.kitten-list {
+    margin: 40px 0 90px 0;
+
+}
+
+.kitten-list .kitten {
+    text-align: center;
+    margin: 0 0 40px 0;
+    padding:30px 0;
+}
+
+.kitten-list .kitten:hover {
+    background-color: #ccc;
+
+}
+
+.kitten-list .kitten .kitten-image-container {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 9999px;
+    margin: 0 auto;
+}
+
+.kitten-list .kitten .kitten-image-container img {
+    max-width: none;
+    width: 150%;
+    margin-left:-20%;
+}
+
+.breadcrumb  {
+    margin: 60px 0;
+
+}
+
+.kitten-details .kitten-image-container {
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 9999px;
+    margin: 0 auto;
+}
+
+.kitten-details .kitten-image-container img {
+    max-width: none;
+    width:140%;
+}
+
+.back-link {
+    display:block;
+}
+
+
